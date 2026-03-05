@@ -66,10 +66,8 @@
     },
     {
       "name": "linc_luajit",
-      "type": "git",
-      "dir": null,
-      "ref": "master",
-      "url": "https://github.com/Daninnocent/linc_luajit"
+      "type": "haxelib",
+      "version": null
     }
   ]
 }
