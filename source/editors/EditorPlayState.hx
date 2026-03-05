@@ -1,7 +1,7 @@
 package editors;
 
 import flixel.FlxCamera;
-import ui.Mobilecontrols;
+import ui.MobileControls;
 import Section.SwagSection;
 import Song.SwagSong;
 import flixel.group.FlxGroup.FlxTypedGroup;
@@ -33,7 +33,7 @@ class EditorPlayState extends MusicBeatState
 	public var grpNoteSplashes:FlxTypedGroup<NoteSplash>;
 
 	#if mobileC
-	var mcontrols:Mobilecontrols; 
+	var mcontrols:MobileControls; 
 	#end
 
 	public var notes:FlxTypedGroup<Note>;
