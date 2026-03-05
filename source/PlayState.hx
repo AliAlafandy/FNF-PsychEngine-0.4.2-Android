@@ -265,7 +265,7 @@ class PlayState extends MusicBeatState
 	public var introSoundsSuffix:String = '';
 
 	#if mobileC
-	var mcontrols:Mobilecontrols; 
+	var mcontrols:MobileControls; 
 	#end
 
 	override public function create()
