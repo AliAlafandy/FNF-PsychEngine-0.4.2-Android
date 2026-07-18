@@ -39,7 +39,23 @@ class MainMenuState extends MusicBeatState
 
 	//var key_editors:FlxButton;
 	
-	var optionShit:Array<String> = ['story_mode', 'freeplay', #if ACHIEVEMENTS_ALLOWED 'awards', #end 'credits', #if !switch 'donate', #end 'options'/*, 'lol'*/];
+	var optionShit:Array<String> = [
+		'story_mode',
+		'freeplay',
+
+		#if ACHIEVEMENTS_ALLOWED
+		'awards',
+		#end
+
+		'credits',
+
+		#if !switch
+		'donate',
+		#end
+
+		'options'/*,
+		'lol'*/
+	];
 
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
@@ -58,7 +74,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camAchievement);
-		FlxCamera.defaultCameras = [camGame];
+		FlxG.cameras.setDefaultDrawTarget = [camGame];
 
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
